@@ -30,10 +30,34 @@ namespace Domaci1
         public void AddEmployee(Employee.JobType jobType)
         {
             Console.WriteLine($"Enter {jobType} employee data:");
-            Console.WriteLine("Name: ");
-            string name = Console.ReadLine();
-            Console.WriteLine("Surname: ");
-            string surname = Console.ReadLine();
+            string name;
+            string surname;
+            while(true)
+            {
+                Console.WriteLine("Name: ");
+                name = Console.ReadLine();
+                if (name.Length > 0)
+                    break;
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Invalid name!");
+                    Console.ResetColor();
+                }
+            }
+            while (true)
+            {
+                Console.WriteLine("Surname: ");
+                surname = Console.ReadLine();
+                if (surname.Length > 0)
+                    break;
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Invalid surname!");
+                    Console.ResetColor();
+                }
+            }
 
             bool parsed;
             int salary;
