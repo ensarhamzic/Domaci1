@@ -20,11 +20,11 @@ namespace Domaci1
             employees = new List<Employee>();
 
             // Testing data
-            employees.Add(new Employee("Ensar", "Hamzic", 15000, Employee.JobType.DEV));
-            employees.Add(new Employee("Tarik", "Ibrahimovic", 25000, Employee.JobType.DEV));
-            employees.Add(new Employee("Adnan", "Crnovrsanin", 50000, Employee.JobType.QA));
-            employees.Add(new Employee("Ramiz", "Sabovic", 100000, Employee.JobType.QA));
-            employees.Add(new Employee("Mirza", "Salkovic", 75000, Employee.JobType.DEV));
+            //employees.Add(new Employee("Ensar", "Hamzic", 15000, Employee.JobType.DEV));
+            //employees.Add(new Employee("Tarik", "Ibrahimovic", 25000, Employee.JobType.DEV));
+            //employees.Add(new Employee("Adnan", "Crnovrsanin", 50000, Employee.JobType.QA));
+            //employees.Add(new Employee("Ramiz", "Sabovic", 100000, Employee.JobType.QA));
+            //employees.Add(new Employee("Mirza", "Salkovic", 75000, Employee.JobType.DEV));
         }
         
         public void AddEmployee(Employee.JobType jobType)
