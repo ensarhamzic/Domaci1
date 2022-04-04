@@ -57,6 +57,7 @@ namespace Domaci1
 
         public void Dispose()
         {
+            // Remove attached event after object is deleted
             MessageManager.OnMessageReceived -= OnMessageReceived;
         }
 
